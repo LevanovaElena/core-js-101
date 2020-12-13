@@ -32,7 +32,8 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  const reg = /\{[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}\}/i;
+  return reg;
 }
 
 
@@ -48,13 +49,14 @@ function getRegexForGuid() {
  *  'slap two'                'part'
  *  'respite'
  *
- * NOTE : the regex length should be < 13
+ * NOTE : the regex length should be < 13//return new RegExp(/s+\w+[ \w+]+|\br+[\w+]|p.t/g);
  *
  * @return {RegExp}
  *
  */
 function getRegexForPitSpot() {
-  throw new Error('Not implemented');
+  const reg = /p[\sa-z]{1}t/;
+  return reg;
 }
 
 
