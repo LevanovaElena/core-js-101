@@ -32,8 +32,8 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  const reg = /\{[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}\}/i;
-  return reg;
+  const regstr = /\{[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}\}/i;
+  return regstr;
 }
 
 
@@ -55,8 +55,8 @@ function getRegexForGuid() {
  *
  */
 function getRegexForPitSpot() {
-  const reg = /p[\sa-z]{1}t/;
-  return reg;
+  const regstr = /p[\sa-z]{1}t/;
+  return regstr;
 }
 
 
